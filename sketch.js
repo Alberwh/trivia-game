@@ -1,22 +1,19 @@
 var bg,bg2,form,system,code,security;
 var score=0;
-var form 
+
 function preload() {
   bg = loadImage("aladdin_cave.jpg");
   bg2 = loadImage("treasure.jpg")
 }
 
 function setup() {
-  createCanvas(displayWidth,displayHeight-200);
- // system = new System()
- // security = new Security()
-  form = new Form()
-  form.display()
+  createCanvas(1000,500);
+  system = new System()
+  security = new Security()
 }
 
 function draw() {
-  //background(bg);
-  /*
+  background(bg);
   clues();
   security.display();
   textSize(20);
@@ -32,5 +29,4 @@ function draw() {
   }
 
   drawSprites()
-  */
 }
